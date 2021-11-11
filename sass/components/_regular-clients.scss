@@ -1,0 +1,35 @@
+.regular-clients__list {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.regular-clients__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 92px;
+  border: $icon-color solid 1px;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:not(:last-child) {
+    margin-right: 30px;
+
+    &:hover,
+    &:focus {
+      border-color: $button-hover-color;
+    }
+  }
+}
+
+.regular-clients__logo {
+  fill: $icon-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .regular-clients__item:hover &,
+  .regular-clients__item:focus & {
+    fill: $button-hover-color;
+  }
+}

@@ -1,0 +1,16 @@
+.logo {
+  @extend %link;
+  font-family: raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.logo__part {
+  color: $brand-color;
+}
+.logo--header {
+  color: $logo-color;
+}
+.logo--footer {
+  color: $text-alt-color;
+}

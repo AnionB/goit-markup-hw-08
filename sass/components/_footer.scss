@@ -1,0 +1,86 @@
+footer {
+  background-color: $footer-background-color;
+  padding: 60px 0;
+  color: $text-alt-color;
+}
+.footer-bar {
+  display: flex;
+}
+.footer-address {
+  margin-top: 20px;
+
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer-address__list {
+  @extend %list;
+}
+
+.footer-address__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.footer-address__link {
+  @extend %link;
+  color: inherit;
+}
+.footer-address__contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-connect {
+  margin-left: 70px;
+  margin-top: 12px;
+}
+.footer-connect__title {
+  @extend %title-item;
+  margin-bottom: 20px;
+  color: inherit;
+}
+
+.footer-subscribe {
+  margin-top: 12px;
+  width: calc((100% - 30px) / 2);
+  margin-left: auto;
+}
+
+.footer-subscribe__title {
+  @extend %title-item;
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.footer-subscribe__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  min-width: 200px;
+  padding: 10px 0;
+  margin-left: 12px;
+}
+
+.footer-subscribe__input {
+  width: calc(100% - 218px);
+  height: 50px;
+  padding: 15px;
+
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: inherit;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.footer-subscribe__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: $text-alt-color;
+}

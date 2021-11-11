@@ -1,0 +1,87 @@
+$logo-color: #000000;
+$brand-color: #2196f3;
+$title-color: #212121;
+$text-color: #757575;
+$text-alt-color: #ffffff;
+$background-color: #ffffff;
+$background-alt-color: #f5f4fa;
+$footer-background-color: #2f303a;
+$header-border-color: #ececec;
+$button-hover-color: #188ce8;
+$icon-color: #afb1b8;
+$hero-background-color: #c4c4c4;
+$porfolio-item-border-color: #eeeeee;
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+body {
+  font-family: roboto, sans-serif;
+  color: $text-color;
+  letter-spacing: 0.03em;
+  background-color: $background-color;
+}
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+h1,
+h2,
+h3 {
+  color: $title-color;
+}
+img {
+  display: block;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-title {
+  margin-bottom: 50px;
+
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.17;
+}
+.hidden {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+%link {
+  text-decoration: none;
+}
+%list {
+  list-style: none;
+}
+%flex-ai-center {
+  display: flex;
+  align-items: center;
+}
+%title-item {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
