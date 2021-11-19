@@ -1,10 +1,21 @@
 footer {
-  background-color: $footer-background-color;
+  background-color: var(--footer-background-color);
   padding: 60px 0;
-  color: $text-alt-color;
+  color: var(--text-alt-color);
 }
+
 .footer-bar {
-  display: flex;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+    text-align: start;
+  }
 }
 .footer-address {
   margin-top: 20px;
@@ -20,7 +31,10 @@ footer {
 
 .footer-address__item {
   &:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 }
 .footer-address__link {
@@ -31,8 +45,14 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-connect {
-  margin-left: 70px;
-  margin-top: 12px;
+  margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 5px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-top: 12px;
+  }
 }
 .footer-connect__title {
   @extend %title-item;
@@ -41,9 +61,18 @@ footer {
 }
 
 .footer-subscribe {
-  margin-top: 12px;
-  width: calc((100% - 30px) / 2);
-  margin-left: auto;
+  margin-top: 60px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+    width: calc((100% - 30px) / 2);
+    margin-left: auto;
+  }
 }
 
 .footer-subscribe__title {
@@ -58,13 +87,21 @@ footer {
   justify-content: center;
   align-items: center;
   min-height: 50px;
-  min-width: 200px;
+  width: 200px;
   padding: 10px 0;
-  margin-left: 12px;
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
 }
 
 .footer-subscribe__input {
-  width: calc(100% - 218px);
+  width: 100%;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% - 218px);
+  }
   height: 50px;
   padding: 15px;
 
@@ -82,5 +119,5 @@ footer {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-  fill: $text-alt-color;
+  fill: var(--text-alt-color);
 }

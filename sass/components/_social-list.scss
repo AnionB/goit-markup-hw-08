@@ -25,7 +25,7 @@
 
   &:hover,
   &:focus {
-    background-color: $button-hover-color;
+    background-color: var(--button-hover-color);
   }
 }
 .social-list__link--footer {
@@ -37,12 +37,12 @@
 
   .social-list__link:hover &,
   .social-list__link:focus & {
-    fill: $text-alt-color;
+    fill: var(--text-alt-color);
   }
 }
 .social-list__icon--main {
-  fill: $icon-color;
+  fill: var(--icon-color);
 }
 .social-list__icon--footer {
-  fill: $text-alt-color;
+  fill: var(--text-alt-color);
 }

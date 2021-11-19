@@ -4,13 +4,21 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  padding: 16px 0;
+  @media screen and (min-width: 768px) {
+    padding: 26px 0;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .logo__part {
-  color: $brand-color;
+  color: var(--brand-color);
 }
 .logo--header {
-  color: $logo-color;
+  color: var(--logo-color);
 }
 .logo--footer {
-  color: $text-alt-color;
+  color: var(--text-alt-color);
 }
