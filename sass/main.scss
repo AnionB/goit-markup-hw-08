@@ -8,22 +8,24 @@
 @import 'components/contacts';
 @import 'components/mobile-menu';
 
-// // main
+// common
 @import 'components/social-list';
 @import 'components/button';
-// @import 'components/hero';
+
+// main
+@import 'components/hero';
 @import 'components/advantage';
-// @import 'components/activities';
-// @import 'components/employee';
+@import 'components/activities';
+@import 'components/employee';
 @import 'components/regular-clients';
 
 // // portfolio-page
-// @import 'components/filter';
-// @import 'components/portfolio';
+@import 'components/filter';
+@import 'components/portfolio';
 
 // // modal-backdrop
-// @import 'components/backdrop';
-// @import 'components/modal';
+@import 'components/backdrop';
+@import 'components/modal';
 
 // footer
 @import 'components/footer';
