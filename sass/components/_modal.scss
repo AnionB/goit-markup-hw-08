@@ -4,8 +4,14 @@
   left: 50%;
   z-index: 9999;
   transform: translate(-50%, -50%) scale(1);
+  //  @media screen and (max-width: 479px) {
+  //   height: 609px;
+  //   width: 100%;
+  //   margin-left: 15px;
+  //   margin-right: 15px;
+  // }
   @media screen and (max-width: 479px) {
-    width: 100%;
+    width: calc(100vw - 30px);
   }
 
   border-radius: 4px;
@@ -45,6 +51,11 @@
   width: 11px;
 }
 .modal-form {
+  @media screen and (max-width: 479px) {
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
   @media screen and (min-width: 480px) {
     height: 609px;
     width: 450px;

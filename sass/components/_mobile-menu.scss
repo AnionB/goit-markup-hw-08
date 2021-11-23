@@ -17,6 +17,9 @@
 }
 
 .main-nav__button.is-open {
+  position: fixed;
+  left: 82vw;
+
   .main-nav__menu-close {
     display: block;
   }
